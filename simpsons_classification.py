@@ -93,6 +93,6 @@ def prepare(img):
     return img
 
 prediction = model.predict(prepare(img))
-print(characters[np.argmax(prediction[0])])
+print(f"The predicted character is:\n{characters[np.argmax(prediction[0])]}")
 
 
